@@ -1,0 +1,305 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;  
+  }
+  
+  /* ---------------------NAV BAR------------------ */
+  #about {
+      width: 100%;
+      height: 100vh;
+  }
+  header {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 10vh;
+      padding: 0 10px;
+  }
+  #logo {
+      cursor: pointer;
+      width: 125px;
+      height: 100px;
+  }
+  .menu {
+      display: flex;
+  
+  }
+  .menu a {
+     text-decoration: none; 
+     padding: 0 20PX;
+     transition: all 0.3s ease 0s;
+     align-self: center;
+     color: #07393E;
+     font-weight: 700;
+  }
+  .menu a:hover {
+     color: #FF0000;
+  }
+  #btn-nav{
+      background-color: #FF0000;
+      color: white;
+      border: none;
+      padding: 7px 15px;
+      cursor: pointer;
+      border-radius: 50px;
+      transition: all 0.3s ease 0s;
+      margin: auto;
+      font-weight: 700;
+  }
+  #btn-nav:hover{
+      color: rgb(7, 57, 62);
+  }
+  
+  
+    form {
+      width:600px;
+      margin:50px auto;
+      display: flex;
+      justify-content: center;
+  }
+  form .search {
+      padding:8px 15px;
+      background:white;
+      border:1px solid gray;
+      width: 85%;
+  
+  }
+  form .button {
+      position:relative;
+      padding:6px 15px;
+      left:-8px;
+      border:2px solid #FF0000;
+      background-color:#FF0000;
+      color:#fafafa;
+      width: 15%;
+  
+  }
+  form .button:hover  {
+      background-color:#fafafa;
+      color:#07393E;
+      transition: all 0.8s ease 0s;
+  
+  }
+    /* --------------------- land page ------------------ */
+    #landpage {
+        width: 100%;
+        height: 90vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.25)),
+        url("../image/about.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        background-attachment: fixed;
+    }
+    #landpage h1{
+        margin: 30px 0 20px 0;
+        font-size: 55px;
+        font-weight: 700;
+        text-shadow: 2px 1px 5px black;
+        text-transform: uppercase;
+    }
+    
+/* --------------------- section one ------------------ */
+#aboutus{
+    background-color:  #F2F0EF;
+    padding: 70px;
+}
+#aboutus .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.container .info{
+    margin: 0 20px;
+    
+}
+.container h2 {
+    color: #07393E;
+    margin: 50px 0 30px 0;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+.container p {
+    color: #07393E;
+    margin: 50px 0 30px 0;
+    font-size: 1.5em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    
+}
+.image img {
+    width: 100%;
+    
+    
+    
+    
+}
+/* --------------------- section our vision ------------------ */
+#our-vision {
+    background-color: white;
+    padding: 70px;
+}
+#our-vision h2{
+    margin: 50px 0 20px 0;
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #07393E;
+    text-transform: uppercase;
+    text-align: center;
+}
+#our-vision p{
+    margin: 50px 0 20px 0;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #07393E;
+    text-align: center;
+
+}
+
+/* --------------------- section  follow us ------------------ */
+
+#follow-us {
+    width: 100%;
+    height: 75vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.25)),
+    url("../image/followus.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-attachment: fixed;
+}
+#follow-us .follow{
+    background-color: white;
+    height: 100%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid rgba(128, 128, 128,0.5);
+
+}
+#follow-us h2{
+    margin: 50px 0 20px 0;
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #07393E;
+    text-transform: uppercase;
+    text-align: center;
+    /* margin-bottom: 50px; */
+}
+#follow-us a {
+    color: #07393E;
+    font-size: 3em;
+    padding: 7px;
+ } 
+ #follow-us a:hover {
+    color: #FF0000;
+    transition: all 0.5s;
+ } 
+ /* --------------------- section feature ------------------ */
+
+#feature {
+    background-color: #F2F0EF;
+    padding: 50px;
+    
+
+}
+#feature .container{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+#featurecard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    border-radius: 5px;
+    text-align: center;
+}
+#featurecard img {
+    width: 35%;
+    margin: auto;
+} 
+#featurecard .body h4 {
+    font-size: 1.5em;
+    color: #07393E;
+    margin: 10px 0;
+} 
+#featurecard .body p {
+    font-size: 1em;
+    color: #07393E;
+    margin: 10px 0;
+} 
+/* --------------------- footer  ------------------ */
+footer{
+    display: flex;
+    flex-direction: column;
+}
+footer .sectionone{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+footer img {
+    width: 200px;
+}
+footer .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.contact h2 {
+    font-size: 2em;
+    color: #07393E;
+} 
+.contact p {
+    font-size: 1.5em;
+    color: #07393E;
+    font-weight: 500;
+}
+.icon a {
+    font-size: 2em;
+    padding: 0 10px;
+    color: #07393E;
+    transition: all 0.5s ease;
+
+} 
+.icon a:hover {
+    color: #FF0000;
+
+}
+
+.sectiontwo p {
+    text-align: center;
+    color: #07393E;
+    font-size: 1.25em;
+    font-weight: 700;
+    padding: 3px;
+
+}
