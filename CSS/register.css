@@ -1,0 +1,349 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;  
+}
+
+
+  /* ---------------------NAV BAR------------------ */
+  /* #home {
+      width: 100%;
+      height: 100vh;
+  } */
+  header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    height: 10vh;
+    padding: 0 10px;
+}
+
+#logo {
+    cursor: pointer;
+    width: 125px;
+    height: 100px;
+}
+.menu a {
+    text-decoration: none; 
+   padding: 0 15PX;
+   transition: all 0.3s ease 0s;
+   align-self: center;
+   color: #07393E;
+   font-weight: 700;
+}
+#btn-nav{
+    background-color: #FF0000;
+    color: white;
+    border: none;
+    padding: 7px 15px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    margin: auto;
+    font-weight: 700;
+}
+#btn-nav:hover{
+    color: rgb(7, 57, 62);
+}
+ form {
+    width: 100% !important;
+    margin:50px auto;
+    display: flex;
+    justify-content: center;
+  
+}
+form .search {
+    padding:8px 15px;
+    background:white;
+    border:1px solid gray;
+    width: 85%;
+    border-radius: 50px 0 0 50px;
+}
+ div form .button {
+    position:relative;
+    padding:6px 15px;
+    left:-8px;
+    border:2px solid #FF0000;
+    background-color:#FF0000;
+    color:#fafafa;
+    width: 15%;
+    border-radius: 0 50px 50px 0;
+    font-weight: bold;
+    font-size: 1em;
+}
+form .button:hover  {
+    background-color:#fafafa;
+    color:#07393E;
+    transition: all 0.8s ease 0s;
+}
+
+
+
+/* ---------------------NAV BAR------------------ */
+
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content:flex-end ;
+    align-items: center;
+    padding: 0 15px;
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+.nav-branding{
+    font-size: 2rem;
+}
+.nav-link{
+    transition: 0.7s ease;
+}
+.nav-link:hover{
+    color: red;
+}
+li{
+    list-style: none;
+}
+li a{
+    color: #07393E;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.3s ease 0s;
+    align-self: center;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+    color: #07393E;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+
+}
+@media(max-width:900px){
+    .hamburger{
+        display: block;
+
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(4){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(5){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(6){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px)rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px)rotate(-45deg);
+    }
+    li a{
+        color: white;
+        text-decoration: none;
+        text-align: center;
+    }
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #07393E;
+        width:100% ;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-item {
+        margin: 16px 0;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+    #sectionfour h1 {
+        font-size: 40px;
+    }
+    #sectionfour p{
+        font-size: 21px;
+
+    }}
+  
+/* --------------------- log in  ------------------ */
+section{
+    background-color:  #F2F0EF;
+    padding: 100px 150px;
+
+}
+.container {
+    background-color: white;
+    height: 100%;
+    border-radius: 10px;
+
+}
+.container p,label {
+    color: #07393E;
+}
+.container label {
+    font-weight: bold;
+   
+}
+.container h2 {
+    color: #07393E;
+    font-size: 2.5em;
+    font-weight: 700;
+    padding-left: 40px;
+    padding-top: 30px;
+    
+ 
+}
+.container a {
+   text-decoration: none;
+ 
+}
+.container a:hover {
+   color: #FF0000;
+ 
+}
+.container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 50px;
+    /* gap: 6px; */
+    margin: 0;
+    padding-bottom: 20px;
+  
+    
+}
+.container form input[type=email],input[type=password],input[type=text],input[type=number] {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  }
+.container form button{
+    width: 50%;
+    padding: 12px;
+    background-color: #FF0000;
+    color: white;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+
+
+}
+.container form button:hover{
+    background-color: #07393E;
+    transition: all 0.5s;
+}
+@media (max-width:750px){
+    section{
+        background-color:  #F2F0EF;
+        padding: 50px 75px;
+    
+    }
+}
+@media (max-width:500px){
+    section{
+        background-color:  #F2F0EF;
+        padding: 10px 20px;
+    
+    }
+    .container form input[type=email],input[type=password],input[type=text],input[type=number] {
+        width: 90%;
+    }
+    .container h2 {
+        font-size: 2em;
+        padding-left: 25px;
+        padding-top: 15px;
+        
+     
+    }
+}
+
+/* --------------------- footer  ------------------ */
+.foooter{
+    display: flex;
+    flex-direction: column;
+    background-color: #07393E;
+}
+.foooter .sectionone{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #07393E;
+
+}
+footer img {
+    width: 200px;
+}
+footer .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.contact h2 {
+    font-size: 2em;
+    /* color: #07393E; */
+    color: white;
+
+} 
+.contact p {
+    font-size: 1.5em;
+    /* color: #07393E; */
+    color: white;
+    font-weight: 500;
+}
+.icon a {
+    font-size: 2em;
+    padding: 0 10px;
+    /* color: #07393E; */
+    color: white;
+    transition: all 0.5s ease;
+
+} 
+.icon a:hover {
+    color: #FF0000;
+
+}
+
+.sectiontwo p {
+    text-align: center;
+    /* color: #07393E; */
+    color: white;
+    font-size: 1.25em;
+    font-weight: 700;
+    padding: 3px;
+
+}
+.sectiontwo  {
+margin: 30px;
+
+}
+

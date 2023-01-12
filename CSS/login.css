@@ -27,7 +27,7 @@
   }
   .menu a {
      text-decoration: none; 
-     padding: 0 20PX;
+     padding: 0 15PX;
      transition: all 0.3s ease 0s;
      align-self: center;
      color: #07393E;
@@ -63,6 +63,7 @@ header form {
       background:white;
       border:1px solid gray;
       width: 85%;
+      border-radius: 50px 0 0 50px;
   
   }
   header form .button {
@@ -73,6 +74,9 @@ header form {
       background-color:#FF0000;
       color:#fafafa;
       width: 15%;
+      border-radius: 0 50px 50px 0;
+      font-weight: bold;
+      font-size: 1em;
   
   }
   header form .button:hover  {
@@ -92,6 +96,8 @@ section{
 .container {
     background-color: white;
     height: 100%;
+    border-radius: 10px;
+
 }
 .container p,label {
     color: #07393E;
@@ -143,6 +149,8 @@ section{
     font-weight: 700;
     border: none;
     cursor: pointer;
+    border-radius: 4px;
+
 
 }
 .container form button:hover{
@@ -150,7 +158,30 @@ section{
     transition: all 0.5s;
 }
 
-
+@media (max-width:750px){
+    .container form input[type=email],input[type=password],input[type=text],input[type=number] {
+        width: 85%;
+    }
+    section{
+        background-color:  #F2F0EF;
+        padding: 50px 75px;
+    
+    }
+}
+@media (max-width:500px){
+    section{
+        background-color:  #F2F0EF;
+        padding: 10px 20px;
+    
+    }
+    .container h2 {
+        font-size: 2em;
+        padding-left: 25px;
+        padding-top: 15px;
+        
+     
+    }
+}
 /* --------------------- footer  ------------------ */
 footer{
     display: flex;
@@ -161,7 +192,6 @@ footer .sectionone{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-
 }
 footer img {
     width: 200px;
