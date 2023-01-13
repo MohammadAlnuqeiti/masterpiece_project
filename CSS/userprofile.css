@@ -185,7 +185,7 @@
       }}
   /* --------------------- land page ------------------ */
 
-.header_wrapper ul{
+.header_wrapper .ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
