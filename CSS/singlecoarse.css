@@ -185,6 +185,62 @@
       }}
 /* -------------------------------------------------------------- */
 
+.course-info{
+    width: 100%;
+    /* height: 75vh; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 30px;
+    gap: 20px;
+}
+.image {
+    flex: 30%;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    padding: 80px 30px;
+}
+.image img{
+    width: 500px;
+    height: 300px;
+}
+.info{
+    flex: 40%;
+    margin: auto;
+}
+.info h1{
+    color: #07393E;
+    font-size: 2.25rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.info p{
+    color: #07393E;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.info  .btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 2rem;
+    background: yellow ;
+    color: #07393E;
+    font-weight: 700;
+    padding: 0.8rem 2.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    
+}
+.info  .btn:hover{
+    background: rgb(240, 240, 214);
+
+}
+/* -------------------------------------------------------------- */
+
 .containerInfo{
     background-color:  #F2F0EF;
     width: 100%;
@@ -201,7 +257,7 @@
     
 }
 .containerInfo .group img{
-    width: 50px;
+    width: 65px;
 }
 .containerInfo .group .info{
     display: flex;
@@ -225,8 +281,7 @@
     align-items: center;
     gap: 2rem;
     flex-wrap: wrap;
-    /* padding: 2rem 0; */
-    /* padding-bottom: 3rem; */
+
 }
 .about .row .video-container{
     flex: 1 1 40rem;
@@ -234,8 +289,7 @@
 }
 .about .row .video-container video{
     width: 100%;
-    border: 1.5rem solid #fff;
-    /* border-radius: 0.5rem; */
+    /* border: 1rem solid #fff; */
     box-shadow:0 0.5rem 1rem rgba(0, 0, 0, 0.1);
     height: 100%;
     object-fit: cover;
@@ -255,9 +309,11 @@
 }
 .about{
     background-color: #07393E;
+
 }
 .about .row .content{
     flex: 1 1 40rem;
+    padding: 15px;
 }
 .about .row .content h3{
     font-size: 3rem;
@@ -273,7 +329,7 @@
     line-height: 1.5;
 
 }
-.about .row .btn{
+/* .about .row .btn{
     display: inline-block;
     margin-top: 1rem;
     border-radius: 5rem;
@@ -286,7 +342,7 @@
 .about .row .btn:hover{
     background: rgb(92, 88, 88) ;
 
-}
+} */
 /* @media (max-width:450px) {
     .heading{
         font-size: 3rem;
@@ -298,17 +354,22 @@
 .instructors{
     padding: 30px;
 }
+/* .instructors h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #07393E;
+} */
 .card{
     border-radius: 25px;
     width: 320px;
     background-color:#fff ;
     margin: auto;
+    padding-top: 20px;
 }
 .card-image{
     position: relative;
     height: 150px;
     width: 150px;
-    /* background-color: #fff; */
     padding: 3px;
 
 }
@@ -346,7 +407,7 @@
     color: #07393E;
     text-align: center;
 }
-.button{
+.card-content .button{
     border: none;
     font-size:16px ;
     color: #fafafa;
@@ -357,7 +418,7 @@
     transition: all 0.3s ease ;
     padding: 8px;
 }
-.button:hover{
+.card-content .button:hover{
     background-color: #316a6f;
     
 }
@@ -394,6 +455,50 @@
   }
 }
 /* -------------------------------------------------------------- */
+.reviews {
+    padding: 30px ;
+
+}
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #07393E;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgba(255, 51, 153, 0.05);
+}
+.reviews .reviews-slider .box{
+    width: 30rem;
+    border: 1px solid red;
+    padding: 2rem;
+    text-align: center;
+    background-color: white;
+}
+.reviews .reviews-slider .box:hover{
+    border:3px solid #07393E;
+    /* transition: all 0.5s ; */
+}
+.reviews .reviews-slider .box img{
+    height: 7rem;   
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.reviews .reviews-slider .box h3{
+    color: #07393E;
+    font-size: 2.2rem;
+    padding: 0.5rem 0;
+}
+.reviews .reviews-slider .box p{
+    color:#07393E;
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    line-height: 2;
+}
+.reviews .reviews-slider .box .stars i{
+    font-size: 1.7rem;
+    color: gold;
+}
 /* --------------------- footer  ------------------ */
 
 

@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Swiper from CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <!-- <link rel="stylesheet" href="./CSS/index.css"> -->
     <link rel="stylesheet" href="./CSS/singlecoarse.css">
 
@@ -78,6 +80,18 @@
         
     </header>
 
+    <section class="course-info">
+        
+        <div class="image">
+            <img src="./image/1215970_a5f8_11.jpg" alt=""/>
+        </div>
+        <div class="info">
+            <h1>The Comprehensive ETABS Professional Course (RCC and Steel)</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+            <a href="#" class="btn">Buy now</a>
+
+        </div>
+    </section>
 
     <section>
         <div class="containerInfo">
@@ -89,24 +103,24 @@
                 </div>
             </div>
             <div class="group">
-                <img src="./image/time.png" alt="">
+                <img src="./image/user.png" alt="">
                 <div class="info">
-                    <h3>The number of hours</h3>
-                    <p>6 weeks</p>
+                    <h3>Instructor</h3>
+                    <p>Guangshuai Han</p>
                 </div>
             </div>
             <div class="group">
-                <img src="./image/time.png" alt="">
+                <img src="./image/price.png" alt="">
                 <div class="info">
-                    <h3>The number of hours</h3>
-                    <p>6 weeks</p>
+                    <h3>Price</h3>
+                    <p>$84.99</p>
                 </div>
             </div>
             <div class="group">
-                <img src="./image/time.png" alt="">
+                <img src="./image/category.png" alt="">
                 <div class="info">
-                    <h3>The number of hours</h3>
-                    <p>6 weeks</p>
+                    <h3>Specialization</h3>
+                    <p>Civil Engineering</p>
                 </div>
             </div>
         </div>
@@ -115,20 +129,21 @@
         <div class="about" id="about">
             <!-- <h1 class="heading"><span>about</span>course</h1> -->
             <div class="row">
-                <div class="video-container">
-                    <video src="./video/SampleVideo_1280x720_20mb.mp4" loop autoplay muted></video>
-                    <h3>best courses</h3>
-                </div>
                 <div class="content">
                     <h3>Description</h3>
                     <p>Steel Structures especially PEB are somewhat tricky to model, analyze and design. Majority of the people are comfortable in RCC Design, but very few are expert in Steel Design. After covering this section , you will be able to calculate wind and seismic loads as per the Indian Standards , Model the Steel Structures i.e. Portal , Plan Bracing and Elevation Bracing, Analyze ,</p>
                     <!-- <a href="#" class="btn">learn more</a> -->
                 </div>
+                <div class="video-container">
+                    <video src="./video/SampleVideo_1280x720_20mb.mp4" controls></video>
+                    <!-- <h3>best courses</h3> -->
+                </div>
+                
             </div>
         </div>
     </section>
     <section class="instructors">
-        <h2>About the instructors</h2>
+        <h2 class="heading"><span style="color: #FF0000;">About</span> the instructors</h2>
         <div class="card">
             <div class="image-content">
                 <span class="overlay"></span>
@@ -145,8 +160,95 @@
             </div>
         </div>
     </section>
+    <section>
+        <div class="reviews" id="reviews">
+            <h2 class="heading"><span style="color: #FF0000;">Clients</span> review</h2>
+            <!-- <h1 class="heading">clients review</h1> -->
+            <div class="swiper reviews-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide box">
+                        <img src="./image/user icon.png" alt="">
+                        <h3>mohammad alnuqeiti</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa laboriosam saepe numquam sequi accusamus tenetur?</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slide box">
+                        <img src="./image/user icon.png" alt="">
+                        <h3>mohammad alnuqeiti</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa laboriosam saepe numquam sequi accusamus tenetur?</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slide box">
+                        <img src="./image/user icon.png" alt="">
+                        <h3>mohammad alnuqeiti</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa laboriosam saepe numquam sequi accusamus tenetur?</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div  class="swiper-slide box">
+                        <img src="./image/user icon.png" alt="">
+                        <h3>mohammad alnuqeiti</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa laboriosam saepe numquam sequi accusamus tenetur?</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slide box">
+                        <img src="./image/user icon.png" alt="">
+                        <h3>mohammad alnuqeiti</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa laboriosam saepe numquam sequi accusamus tenetur?</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slide box">
+                        <img src="./image/user icon.png" alt="">
+                        <h3>mohammad alnuqeiti</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa laboriosam saepe numquam sequi accusamus tenetur?</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+            
+                   
 
-    <!-- Scroll to top -->
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+<!-- Scroll to top -->
 <span class="up"> <i class="fa-solid fa-up-long"></i></span>
 <!-- Scroll to top -->
 
@@ -157,9 +259,9 @@
             <div class="col_footer">
                 <h4> Company </h4>
                 <ul>
-                    <li><a href="#"> Home</a></li>
-                    <li><a href="#"> About Us</a></li>
-                    <li><a href="#"> Contact Us</a></li>
+                    <li><a href="./index.html"> Home</a></li>
+                    <li><a href="./about.html"> About Us</a></li>
+                    <li><a href="./contact.html"> Contact Us</a></li>
                     
                 </ul>
             </div>
@@ -167,8 +269,8 @@
             <div class="col_footer">
                 <h4> Quick Links </h4>
                 <ul>
-                    <li><a href="#"> Login</a></li>
-                    <li><a href="#"> Register</a></li>
+                    <li><a href="./login.html"> Login</a></li>
+                    <li><a href="./register.html"> Register</a></li>
                     <li><a href="#"> Shop Now </a></li>
                 </ul>
             </div>
@@ -210,7 +312,13 @@
 <div class="footer-botoom">
     <p> Copyright &copy; 2023 <span>Nuqeiti For Training </span> . designed by <span> Mohammad Al-nuqeiti </span> </p>
 </div>
+
+    <!-- Swiper from CDN -->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
 <script src="./JS/scroll.js"></script>
 <script src="./JS/jave.js"></script>
+<script src="./JS/review.js"></script>
 </body>
 </html>
