@@ -9,27 +9,69 @@
     <title>log in</title>
 </head>
 <body>
-    <header> 
-        <a >
+    <header class="header"> 
+      
+        <a href="./index.html">
             <img  id="logo" src="./image/logo.png" alt="">
         </a>
-        <div>
-            <form>
+  
+        <div style="width: 90%;">
+            <form id="form" class="form">
                 <input type="search" placeholder="Search..." required class="search">
                 <input type="button" value="Search" class="button">
             </form>
         </div>
-        <div class="menu">
-                
-            <a href="./index.html" >HOME</a>
-            <a href="#" >ALL COURS </a>
-            <a href="./about.html">ABOUT</a>
-            <a href="./contact.html">CONTACT</a>
-            <a href="#">LOGIN</a>
-            <a href="#"><button id="btn-nav">REGISTER</button></a>
-                
+   
+        <div class="navbar">
+           
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="./index.html" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./shop.html" class="nav-link">COURSES </a>
+                </li>
+                <li class="nav-item">
+                    <a href="./about.html" class="nav-link">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./contact.html" class="nav-link">CONTACT</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./login.html" class="nav-link">LOGIN</a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="dropbtn">REGISTER 
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="./register.html">REGISTER AS STUDENT</a>
+                          <a href="./registerEngineering.html">REGISTER AS ENGINEERING</a>
+                        </div>
+                    </div>
+                    <!-- <a href="./register.html"><button id="btn-nav" class="nav-link">REGISTER</button></a> -->
+                </li>
+            </ul>
+             <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
+        </div>
+       
     
+</header>
+<header id="hidden" class="header">
+    <div style="width: 90%;">
+        <form id="form">
+            <input type="search" placeholder="Search..." required class="search">
+            <input type="button" value="Search" class="button">
+        </form>
+    </div>
 </header>
 <section>
 <div class="container">
@@ -61,6 +103,7 @@
                     <li><a href="./index.html"> Home</a></li>
                     <li><a href="./about.html"> About Us</a></li>
                     <li><a href="./contact.html"> Contact Us</a></li>
+   
                     
                 </ul>
             </div>
@@ -96,7 +139,7 @@
                 </div>
 
                 <div class="qouat_footer">
-                    <p>    <span>Nuqeiti For Training . </span> Develop a specific career skill through a series of related
+                    <p> <span>Nuqeiti For Training . </span> Develop a specific career skill through a series of related
                         courses and hands-on projects. Put theory into practice
                         and earn a Specialization Certificate to add to your CV.</p>
                 </div>

@@ -15,28 +15,69 @@
 </head>
 <body>
     <div id="contact">
-        <header> 
-                <a >
-                    <img  id="logo" src="./image/logo.png" alt="">
-                </a>
-                <div>
-                    <form>
-                        <input type="search" placeholder="Search..." required class="search">
-                        <input type="button" value="Search" class="button">
-                    </form>
-                </div>
-                <div class="menu">
-                        
-                    <a href="./index.html" >HOME</a>
-                    <a href="#" >ALL COURS </a>
-                    <a href="./about.html">ABOUT</a>
-                    <a href="./contact.html">CONTACT</a>
-                    <a href="./login.html">LOGIN</a>
-                    <a href="#"><button id="btn-nav">REGISTER</button></a>
-                        
-                </div>
-            
-        </header>
+        <header class="header"> 
+      
+            <a href="./index.html">
+                <img  id="logo" src="./image/logo.png" alt="">
+            </a>
+      
+            <div style="width: 90%;">
+                <form id="form" class="form">
+                    <input type="search" placeholder="Search..." required class="search">
+                    <input type="button" value="Search" class="button">
+                </form>
+            </div>
+       
+            <div class="navbar">
+               
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./shop.html" class="nav-link">COURSES </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./about.html" class="nav-link">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./contact.html" class="nav-link">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./login.html" class="nav-link">LOGIN</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="dropbtn">REGISTER 
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                              <a href="./register.html">REGISTER AS STUDENT</a>
+                              <a href="./registerEngineering.html">REGISTER AS ENGINEERING</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                 <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            </div>
+           
+        
+    </header>
+    <header id="hidden" class="header">
+        <div style="width: 90%;">
+            <form id="form">
+                <input type="search" placeholder="Search..." required class="search">
+                <input type="button" value="Search" class="button">
+            </form>
+        </div>
+    </header>
         <section id="landpage">
             <h1> CONTACT US</h1>
         </section>
@@ -57,25 +98,25 @@
                 <div>
                     <span><i class="fa-solid fa-phone"></i></span>
                     <span> Phone No.</span>
-                    <span class="text"> +962 799379762</span>
+                    <span class="text"> +962 790369501</span>
                 </div>
 
                 <div>
                     <span><i class="fa-solid fa-at"></i></span>
                     <span>  Email </span>
-                    <span class="text"> shandaq@gmail.com</span>
+                    <span class="text"> Nuqeiti@gmail.com</span>
                 </div>
 
                 <div>
                     <span><i class="fa-solid fa-location-dot"></i></span>
-                    <span> Address</span>
-                    <span class="text"> Aqaba -  </span>
+                    <span> Address </span>
+                    <span class="text"> Jordan </span>
                 </div>
 
                 <div>
                     <span><i class="fa-solid fa-calendar"></i></span>
                     <span> Opening Hours</span>
-                    <span class="text"> Sunday - Thursday <br>( 9:00 Am to 3:30 Pm )</span>
+                    <span class="text">  <br></span>
                 </div>
             </div>
 
@@ -96,53 +137,19 @@
                 </form>
 
                 <div>
-                    <img src="./image/contact2.jpg" alt="contact us">
+                    <img src="./image/Contact us-bro.png" alt="contact us">
                 </div>
 
             </div>
         </div>
-
+<!-- 
        <div class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3471.3794566788406!2d35.00686741138437!3d29.534441875080848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15007110deda62e5%3A0x943e07a599369d37!2z2LnZitin2K_YqSDYp9mE2K_Zg9iq2YjYsdi52KjYr9in2YTZhdis2YrYryDYtNmG2K_ZgiDZhNi32Kgg2KfZhNij2LPZhtin2YY!5e0!3m2!1sen!2sjo!4v1671968113788!5m2!1sen!2sjo" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-       </div>
+       </div> -->
 
     </section>
 
-
-
-    <!-- <section id="contact-table">
-        
-        <div class="form-contact">
-            <h2>WE'RE READY, LET'S TALK.</h2>
-            <form>
-                <input type="text" id="name" name="name" placeholder="Your Name">
-                <input type="email" id="email" name="email" placeholder="Email Address">
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message..."></textarea>
-                <button type="submit">SEND MESSAGE</button>
-            </form>
-        </div>
-        <div class="information">
-            <h2>CONTACT INFO</h2>
-            <div>
-                <h4>Email Us</h4>
-                <p>@gmail.com</p>
-            </div>
-            <div>
-                <h4>Call Us</h4>
-                <p>+962 795-5585-000</p>
-            </div>
-            <div>
-                <h4>Follow Us</h4>
-                <a href="https://mail.google.com/mail/u/0/#inbox"  target="_blank"><i class="fa-solid fa-envelope"></i></a>
-                <a href="#phone"><i class="fa-solid fa-square-phone"></i></a>
-                <a href="https://www.linkedin.com/in/mohammad-alnuqeiti-1954b1251/"  target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="" ><i class="fa-brands fa-square-facebook"></i></a>
-            </div>
-
-
-        </div>
-    </section> -->
-    <!-- Scroll to top -->
+ <!-- Scroll to top -->
 <span class="up"> <i class="fa-solid fa-up-long"></i></span>
 <!-- Scroll to top -->
 
@@ -156,6 +163,7 @@
                     <li><a href="./index.html"> Home</a></li>
                     <li><a href="./about.html"> About Us</a></li>
                     <li><a href="./contact.html"> Contact Us</a></li>
+   
                     
                 </ul>
             </div>
@@ -191,7 +199,7 @@
                 </div>
 
                 <div class="qouat_footer">
-                    <p>    <span>Nuqeiti For Training . </span> Develop a specific career skill through a series of related
+                    <p> <span>Nuqeiti For Training . </span> Develop a specific career skill through a series of related
                         courses and hands-on projects. Put theory into practice
                         and earn a Specialization Certificate to add to your CV.</p>
                 </div>

@@ -1,40 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;  
-  }
-  
-  /* ---------------------NAV BAR------------------ */
-  #contact {
-      width: 100%;
-      height: 100vh;
-  }
-  header {
+}
+
+#contact {
+    width: 100%;
+    height: 100vh;
+}
+/* ---------------------NAV BAR------------------ */
+header {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
+      width: 100%;
       align-items: center;
       height: 10vh;
       padding: 0 10px;
+      /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+      z-index: 999;
+      position: sticky;
+      top: 0;
+      left: 0;
+      background-color: white; */
+  }
+  #hidden{
+    display:none;
   }
   #logo {
       cursor: pointer;
       width: 125px;
       height: 100px;
   }
-  .menu {
-      display: flex;
-  
-  }
   .menu a {
-     text-decoration: none; 
+      text-decoration: none; 
      padding: 0 15PX;
      transition: all 0.3s ease 0s;
      align-self: center;
      color: #07393E;
      font-weight: 700;
-  }
-  .menu a:hover {
-     color: #FF0000;
   }
   #btn-nav{
       background-color: #FF0000;
@@ -50,41 +56,212 @@
   #btn-nav:hover{
       color: rgb(7, 57, 62);
   }
-  
-  
-  header form {
-      width:600px;
+  .header form {
+      width: 100%;
       margin:50px auto;
       display: flex;
       justify-content: center;
+    
   }
-  header form .search {
+  .header form .search {
       padding:8px 15px;
       background:white;
       border:1px solid gray;
       width: 85%;
       border-radius: 50px 0 0 50px;
-  
   }
-  header form .button {
-      position:relative;
+  .dropdown a {
+    float: left;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    overflow: hidden;
+
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+      background-color: #FF0000;
+    color: white;
+    border: none;
+    padding: 7px 15px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    margin: auto;
+    font-weight: 700;
+    width:120px;
+    outline: none;
+    font-size: 1em;
+
+  }
+  
+  .dropdown a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    
+  }
+  .header div form .button {
       padding:6px 15px;
       left:-8px;
       border:2px solid #FF0000;
       background-color:#FF0000;
       color:#fafafa;
-      width: 15%;
       border-radius: 0 50px 50px 0;
       font-weight: bold;
       font-size: 1em;
-  
   }
-  header form .button:hover  {
+  .header form .button:hover  {
       background-color:#fafafa;
       color:#07393E;
       transition: all 0.8s ease 0s;
+  }
+  
+  
+  
+  /* ---------------------NAV BAR------------------ */
+  
+  .navbar{
+      min-height: 70px;
+      display: flex;
+      justify-content:flex-end ;
+      align-items: center;
+      padding: 0 15px;
+  }
+  .nav-menu{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 25px;
+  }
+  .nav-branding{
+      font-size: 2rem;
+  }
+  .nav-link{
+      transition: 0.7s ease;
+  }
+  .nav-link:hover{
+      color: red;
+  }
+  li{
+      list-style: none;
+  }
+  li a{
+      color: #07393E;
+      text-decoration: none;
+      font-weight: 700;
+      transition: all 0.3s ease 0s;
+      align-self: center;
+  }
+  .hamburger{
+      display: none;
+      cursor: pointer;
+      color: #07393E;
+  }
+  .bar{
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      background-color: black;
   
   }
+  @media(max-width:913px){
+      .hamburger{
+          display: block;
+  
+      }
+      .hamburger.active .bar:nth-child(2){
+          opacity: 0;
+      }
+      .hamburger.active .bar:nth-child(4){
+          opacity: 0;
+      }
+      .hamburger.active .bar:nth-child(5){
+          opacity: 0;
+      }
+      .hamburger.active .bar:nth-child(6){
+          opacity: 0;
+      }
+      .hamburger.active .bar:nth-child(1){
+          transform: translateY(8px)rotate(45deg);
+      }
+      .hamburger.active .bar:nth-child(3){
+          transform: translateY(-8px)rotate(-45deg);
+      }
+      li a{
+          color: white;
+          text-decoration: none;
+          text-align: center;
+      }
+      .nav-menu {
+          position: fixed;
+          left: -100%;
+          top: 70px;
+          gap: 0;
+          flex-direction: column;
+          background-color: #07393E;
+          width:100% ;
+          text-align: center;
+          transition: 0.3s;
+      }
+      .nav-item {
+          margin: 16px 0;
+      }
+      .nav-menu.active{
+          left: 0;
+      }
+      #sectionfour h1 {
+          font-size: 40px;
+      }
+      #sectionfour p{
+          font-size: 21px;
+  
+      }}
+
+      @media(max-width:500px){
+        #hidden{
+            display: flex;
+            margin: auto;
+            justify-content: center;
+        }
+        .header .form{
+            display: none;
+        }
+      }
   /* --------------------- land page ------------------ */
   #landpage {
       width: 100%;
@@ -109,43 +286,7 @@
         text-shadow: 2px 1px 5px black;
         text-transform: uppercase;
     }
-    /* --------------------- connect ------------------ */
-    /* .contact_info {
-        margin: 2rem 0;
-        text-align: center;
-        padding: 2rem 0;
-        display: grid;
-        grid-template-columns: repeat(4 , 1fr);
-        font-family: 'Open Sans', sans-serif;
-    }
-    .contact_info span {
-     display: block;
-    }
-    
-    .contact_info div {
-        margin: 0.8rem 0;
-        padding: 1rem;
-    }
-    .contact_info span i {
-        font-size: 2rem;
-        padding-bottom: 0.9rem;
-        color: #26e5c2;
-    }
-    .contact_info div span:nth-child(3) {
-        margin: 0.7rem 0;
-    }
-    
-    .contact_info div span:nth-child(2) {
-        font-weight: 500;
-        font-size: 1.1rem;
-    }
-    
-    .contact_info text {
-        padding-top: 0.4rem;
-    } */
-    /* Contact US PAGE  */
-
-
+/* --------------------- connect ------------------ */
 
 .line div{
     margin: 0 0.4rem;
@@ -237,6 +378,10 @@
 
 .contact_info text {
     padding-top: 0.4rem;
+    color: #07393E;
+}
+.contact_info span {
+    color: #07393E;
 }
 
 .contact_form {
@@ -258,19 +403,15 @@
     outline: 0;
 }
 .form_control:focus {
-    box-shadow: 0 0 9px -3px #206A5D;
+    box-shadow: 0 0 9px -3px #07393E;
 }
-/* .contact_form form div {
-    display: grid;
-    grid-template-columns: repeat(2 , 1fr);
-    column-gap: 0.6rem;
-} */
+
 .send_btn {
     font-family:'open sans' sans-serif; 
     font-size: 1rem;
     text-transform: uppercase;
     color: #fff;
-    background-color: #1F4068;
+    background-color: #FF0000;
     border: none;
     border-radius: 5px;
     padding: 0.7rem 1.5rem;
@@ -283,7 +424,7 @@
 }
 .contact_form div img {
     width:100%;
-    height: 70vh;
+    height: 80vh;
 }
 .contact_form div {
     margin: 0 auto;
@@ -308,87 +449,30 @@
     }
    
 }
+@media (max-width: 500px) {
+    .contact_body{
+        margin-top: 80px;
+    }
+    
+
+   
+}
+@media (max-width: 400px) {
+    #landpage h1{
+      font-size: 32px;
+    }
+    .contact_body h2{
+      font-size: 1.75rem;    
+    }
+
+   
+}
 
 /* End Contact US PAGE  */
+  /* --------------------- footer  ------------------ */
 
-    /* ---------------------  contact section ------------------ */
-/*     
-    #contact-table {
-        display: flex;
-        flex-wrap: wrap;
-        background-color: #F2F0EF;
-        padding: 50px;
-        gap: 35px;
-    } 
-    .form-contact h2 {
-        color: #07393E;
-        margin: 50px 0 30px 0;
-        font-size: 2em;
-        font-weight: 700;
-    } 
-    .form-contact form{
-    display: flex;
-    flex-direction: column;
- }
- .form-contact form input[type=text],input[type=email], textarea {
-        width: 100%;
-        padding: 12px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-        margin-top: 6px;
-        margin-bottom: 16px;
-      }
-.form-contact form button{
-    width: 30%;
-    padding: 12px;
-    background-color: #FF0000;
-    color: white;
-    font-weight: 700;
-    border: none;
-    cursor: pointer;
-
-}
-.form-contact form button:hover{
-    background-color: #07393E;
-    transition: all 0.5s;
-}
-.information{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
-}
-.information h2 {
-    color: #07393E;
-    margin: 50px 0 30px 0;
-    font-size: 2em;
-    font-weight: 700;
- } 
-.information h4 {
-    color: #07393E;
-    font-size: 1.25em;
-    font-weight: 700;
-    margin-bottom: 10px;
- } 
-.information p {
-    color: #07393E;
-    font-size: 1em;
-
- } 
-.information a {
-    color: #07393E;
-    font-size: 2em;
-    padding-right: 5px;
- } 
-.information a:hover {
-    color: #FF0000;
-    transition: all 0.5s;
- }  */
- /* --------------------- footer  ------------------ */
-
- .footer {
-    background-color: #07393E;
+  .footer {
+    background-color: rgb(7, 57, 62);
     /* background-color: #24262b; */
     padding: 70px 0;
     font-family: 'Poppins', sans-serif;
@@ -475,10 +559,11 @@
 .col_footer .qouat_footer {
     margin-top: 30px;
     color:#ffffff ;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 100;
     letter-spacing: 1.8;
     line-height: 1.5;
+    font-weight: 200;
     font-family: 'Grey Qo', cursive;
 }
 .col_footer .qouat_footer span {
@@ -519,7 +604,7 @@
     font-family: 'Annie Use Your Telescope', cursive;
     color:  rgb(185, 12, 12);
 }
-
+/* End  Footer */
   
   /* Scroll UP */
 

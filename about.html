@@ -10,28 +10,70 @@
 </head>
 <body>
     <div id="about">
-        <header> 
-                <a >
-                    <img  id="logo" src="./image/logo.png" alt="">
-                </a>
-                <div>
-                    <form>
-                        <input type="search" placeholder="Search..." required class="search">
-                        <input type="button" value="Search" class="button">
-                    </form>
-                </div>
-                <div class="menu">
-                        
-                    <a href="./index.html" >HOME</a>
-                    <a href="#" >ALL COURS </a>
-                    <a href="./about.html">ABOUT</a>
-                    <a href="./contact.html">CONTACT</a>
-                    <a href="./login.html">LOGIN</a>
-                    <a href="#"><button id="btn-nav">REGISTER</button></a>
-                        
-                </div>
-            
-        </header>
+        <header class="header"> 
+      
+            <a href="./index.html">
+                <img  id="logo" src="./image/logo.png" alt="">
+            </a>
+      
+            <div style="width: 90%;">
+                <form id="form" class="form">
+                    <input type="search" placeholder="Search..." required class="search">
+                    <input type="button" value="Search" class="button">
+                </form>
+            </div>
+       
+            <div class="navbar">
+               
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./shop.html" class="nav-link">COURSES </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./about.html" class="nav-link">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./contact.html" class="nav-link">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./login.html" class="nav-link">LOGIN</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="dropbtn">REGISTER 
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                              <a href="./register.html">REGISTER AS STUDENT</a>
+                              <a href="./registerEngineering.html">REGISTER AS ENGINEERING</a>
+                            </div>
+                        </div>
+                        <!-- <a href="./register.html"><button id="btn-nav" class="nav-link">REGISTER</button></a> -->
+                    </li>
+                </ul>
+                 <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            </div>
+           
+        
+    </header>
+    <header id="hidden" class="header">
+        <div style="width: 90%;">
+            <form id="form">
+                <input type="search" placeholder="Search..." required class="search">
+                <input type="button" value="Search" class="button">
+            </form>
+        </div>
+    </header>
         <section id="landpage">
             <h1> ABOUT US</h1>
         </section>
@@ -46,10 +88,13 @@
                     <p>In engineering, we work hard towards providing a Jordanian engineering platform that raises competencies and develops their skills and knowledge. We believe that realistic challenges make continuous learning an urgent necessity, and at the same time puts Jordanian competencies under pressure of limited time, and for this reason the solution with us in this platform was to provide engineering courses that qualify Engineers for the labor market and develop their skills with modern modern means so that you can continue your learning at the right time for you without the need to adhere to the appointments of others.</p>
                     <!-- <a href="#" class="btn">learn more</a> -->
                 </div>
-                <div class="video-container">
+                <div class="image">
+                    <img src="./image/aboutimage.jpg" alt="">
+                </div>
+                <!-- <div class="video-container">
                     <video src="./video/SampleVideo_1280x720_20mb.mp4" loop autoplay muted></video>
                     <h3>best courses</h3>
-                </div>
+                </div> -->
                
             </div>
         </div>
@@ -125,7 +170,7 @@
             </div>
         </div>
     </section>
-    <!-- Scroll to top -->
+<!-- Scroll to top -->
 <span class="up"> <i class="fa-solid fa-up-long"></i></span>
 <!-- Scroll to top -->
 
@@ -139,6 +184,7 @@
                     <li><a href="./index.html"> Home</a></li>
                     <li><a href="./about.html"> About Us</a></li>
                     <li><a href="./contact.html"> Contact Us</a></li>
+   
                     
                 </ul>
             </div>
@@ -174,7 +220,7 @@
                 </div>
 
                 <div class="qouat_footer">
-                    <p>    <span>Nuqeiti For Training . </span> Develop a specific career skill through a series of related
+                    <p> <span>Nuqeiti For Training . </span> Develop a specific career skill through a series of related
                         courses and hands-on projects. Put theory into practice
                         and earn a Specialization Certificate to add to your CV.</p>
                 </div>

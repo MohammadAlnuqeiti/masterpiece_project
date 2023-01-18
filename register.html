@@ -4,50 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./CSS/register.css">
-
+    <link rel="stylesheet" href="./CSS/registerUser.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="icon" href="">  
-    <title>Register</title>
+
+    <title>register</title>
 </head>
 <body>
     <header class="header"> 
       
-        <a >
+        <a href="./index.html">
             <img  id="logo" src="./image/logo.png" alt="">
         </a>
   
         <div style="width: 90%;">
-            <form id="form">
+            <form id="form" class="form">
                 <input type="search" placeholder="Search..." required class="search">
                 <input type="button" value="Search" class="button">
             </form>
         </div>
-        <!-- <div class="menu">
-                
-            <a href="./index.html" >HOME</a>
-            <a href="#" >ALL COURS </a>
-            <a href="./about.html">ABOUT</a>
-            <a href="./contact.html">CONTACT</a>
-            <a href="./login.html">LOGIN</a>
-            <a href="#"><button id="btn-nav">REGISTER</button></a>
-                
-        </div> -->
+   
         <div class="navbar">
            
             <ul class="nav-menu">
-                <!-- <div>
-                    <form >
-                        <input type="search" placeholder="Search..." required class="search">
-                        <input type="button" value="Search" class="button">
-                    </form>
-                </div> -->
                 <li class="nav-item">
                     <a href="./index.html" class="nav-link">HOME</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">ALL COURS </a>
+                    <a href="./shop.html" class="nav-link">COURSES </a>
                 </li>
                 <li class="nav-item">
                     <a href="./about.html" class="nav-link">ABOUT</a>
@@ -59,7 +42,16 @@
                     <a href="./login.html" class="nav-link">LOGIN</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#"><button id="btn-nav" class="nav-link">REGISTER</button></a>
+                    <div class="dropdown">
+                        <button class="dropbtn">REGISTER 
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="./register.html">REGISTER AS STUDENT</a>
+                          <a href="./registerEngineering.html">REGISTER AS ENGINEERING</a>
+                        </div>
+                    </div>
+                    <!-- <a href="./register.html"><button id="btn-nav" class="nav-link">REGISTER</button></a> -->
                 </li>
             </ul>
              <div class="hamburger">
@@ -74,30 +66,60 @@
        
     
 </header>
-<section>
+<header id="hidden" class="header">
+    <div style="width: 90%;">
+        <form id="form">
+            <input type="search" placeholder="Search..." required class="search">
+            <input type="button" value="Search" class="button">
+        </form>
+    </div>
+</header>
+<section class="body">
+
     <div class="container">
-    <h2>Register</h2>
-    <form action="" method="">
-        <label for="">First name</label>
-        <input type="text" name="email" placeholder="">
-        <label for="">Last name</label>
-        <input type="text" name="Password">
-        <label for="">Phone number</label>
-        <input type="number" name="Password">
-        <label for="">Email</label>
-        <input type="email" name="Password">
-        <label for="">Password</label>
-        <input type="password" name="Password">
-        <label for="">Confirm password</label>
-        <input type="password" name="Password">
-        <button type="submit">Sign up</button>
-        <p>Do have an account?<a href="./login.html" >Log in</a></p>
-    </form>
+        <div class="heading">Registration</div>
+        <form action="#">
+            <div class="card-details">
+                <div class="card-box">
+                    <span class="details">First Name</span>
+                    <input type="text" placeholder="Enter your first name">
+                </div>
+                <div class="card-box">
+                    <span class="details">Last Name</span>
+                    <input type="text" placeholder="Enter your lirst name">
+                </div>
+                <div class="card-box">
+                    <span class="details">Email</span>
+                    <input type="email" placeholder="Enter your email name">
+                </div>
+                <div class="card-box">
+                    <span class="details">Phone Number</span>
+                    <input type="phone" placeholder="Enter your phone number">
+                </div>
+                <div class="card-box">
+                    <span class="details">Password</span>
+                    <input type="password" placeholder="Enter your  password">
+                </div>
+                <div class="card-box">
+                    <span class="details">Confirm Name</span>
+                    <input type="password" placeholder="Confirm password">
+                </div>
+            </div>
+            <div class="circal-form">
+                <span class="circal-title">Gender</span>
+                <div class="category">
+                    <input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Female
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="Register">
+            </div>
+            
+        </form>
     </div>
     
-    
-    </section>
-
+</section>
 <!-- Scroll to top -->
 <span class="up"> <i class="fa-solid fa-up-long"></i></span>
 <!-- Scroll to top -->
@@ -112,6 +134,7 @@
                     <li><a href="./index.html"> Home</a></li>
                     <li><a href="./about.html"> About Us</a></li>
                     <li><a href="./contact.html"> Contact Us</a></li>
+   
                     
                 </ul>
             </div>
@@ -147,7 +170,7 @@
                 </div>
 
                 <div class="qouat_footer">
-                    <p>    <span>Nuqeiti For Training . </span> Develop a specific career skill through a series of related
+                    <p> <span>Nuqeiti For Training . </span> Develop a specific career skill through a series of related
                         courses and hands-on projects. Put theory into practice
                         and earn a Specialization Certificate to add to your CV.</p>
                 </div>
@@ -163,5 +186,6 @@
     <p> Copyright &copy; 2023 <span>Nuqeiti For Training </span> . designed by <span> Mohammad Al-nuqeiti </span> </p>
 </div>
 <script src="./JS/scroll.js"></script>
-<script src="./JS/jave.js"></script></body>
+<script src="./JS/jave.js"></script>
+</body>
 </html>

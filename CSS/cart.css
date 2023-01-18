@@ -258,136 +258,103 @@
             display: none;
         }
       }
+/* ----------------------- cart -------------------------- */
 
-    /* ------------------------ form ----------------- */
-:root{
-   --blue:#3498db;
-   --dark-blue:#2980b9;
-   --red:#e74c3c;
-   --dark-red:#c0392b;
-   --black:#333;
-   --white:#fff;
-   --light-bg:#eee;
-   --box-shadow:0 5px 10px rgba(0,0,0,.1);
-}
-
-*{
-   font-family: 'Poppins', sans-serif;
-   margin:0; padding:0;
-   box-sizing: border-box;
-   outline: none; border: none;
-   text-decoration: none;
-}
-/* 
-*::-webkit-scrollbar{
-   width: 10px;
-}
-
-*::-webkit-scrollbar-track{
-   background-color: transparent;
-}
-
-*::-webkit-scrollbar-thumb{
-   background-color: var(--blue);
+/* body{
+    background-color: #F2F0EF;
 } */
 
-.update-profile .btn,
-.delete-btn{
-   width: 100%;
-   border-radius: 5px;
-   padding:10px 30px;
-   color:white;
-   display: block;
-   text-align: center;
-   cursor: pointer;
-   font-size: 20px;
-   margin-top: 10px;
+.cart{
+    margin: 80px auto;
+    width: 70%;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
 }
 
-.update-profile .btn{
-   background-color: red;
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+th{
+    font-size: 18px;
+    text-align: left;
+    padding: 10px;
+    color: #fff;
+    background: #07393E;
+    font-weight: normal;
+
+}
+tr{
+    border-bottom: 1px solid #07393E;
+}
+tr:last-child{
+    border-bottom: none;
+}
+td{
+    padding: 15px 10px;
+    color: #07393E;
+
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: #FF0000;
+    font-size: 16px;
+}
+td img {
+    width: 110px;
+    height: 80px;
+    margin-right: 10px;
 }
 
-.update-profile .btn:hover{
-   background-color: #07393E;
-}
+.total-price{
+    display: flex;
+    justify-content: flex-end;
 
-.update-profile .delete-btn{
+}
+.total-price table{
+    border-top: 3px solid #07393E ;
+    width: 100%;
+    max-width: 325px;
+
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+.total-price a{
+    text-decoration: none;
+    color: white;
     background-color: #07393E;
-}
-
-.update-profile .delete-btn:hover{
-    background-color: red;
-}
-
-.update-profile{
-   min-height: 100vh;
-   background-color: #F2F0EF;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   padding:20px;
-}
-
-.update-profile form{
-   padding:20px;
-   background-color: var(--white);
-   box-shadow: var(--box-shadow);
-   text-align: center;
-   width: 700px;
-   text-align: center;
-   border-radius: 5px;
-}
-
-.update-profile form img{
-   height: 200px;
-   width: 200px;
-   border-radius: 50%;
-   object-fit: cover;
-   margin-bottom: 5px;
-}
-
-.update-profile form .flex{
-   display: flex;
-   justify-content: space-between;
-   margin-bottom: 20px;
-   gap:25px;
-}
-
-.update-profile form .flex .inputBox{
-   width: 49%;
-}
-
-.update-profile form .flex .inputBox span{
-   text-align: left;
-   display: block;
-   margin-top: 15px;
-   font-size: 17px;
-   color:var(--black);
-}
-
-.update-profile form .flex .inputBox .box{
-   width: 100%;
-   border-radius: 5px;
-   background-color:  #F2F0EF;
-   padding:12px 14px;
-   font-size: 17px;
-   color:var(--black);
-   margin-top: 10px;
-   border: 1px solid #ccc;
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+    border-radius: 50px;
+    text-align: center;
+    padding: 12px 0 10px;
+    margin: auto;
+    transition: all 0.4s ease;
 
 }
+.total-price a:hover{
+    background-color: #1e6f76;
 
-@media (max-width:650px){
-   .update-profile form .flex{
-      flex-wrap: wrap;
-      gap:0;
-   }
-   .update-profile form .flex .inputBox{
-      width: 100%;
-   }
 }
+ @media (max-width:430px){
+    .cart{
+        width: 100%;
+        
 
+    }
+} 
 
   /* --------------------- footer  ------------------ */
 
