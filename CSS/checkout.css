@@ -266,10 +266,11 @@
   justify-content: center;
   align-items: flex-start;
   padding:25px;
-  min-height: 100vh;
+  min-height: 90vh;
   background: linear-gradient(90deg, #F2F0EF 60%, #F2F0EF 40.1%);
   gap: 50px;
   flex-wrap: wrap;
+  align-content: center;
 }
 
 .container .form{

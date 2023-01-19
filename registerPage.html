@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="./CSS/editaccountuser.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/registerPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-   <title>update profile</title>
-
-   <!-- custom css file link  -->
-
+    <title>register</title>
 </head>
 <body>
     <header class="header"> 
@@ -77,38 +74,46 @@
         </form>
     </div>
 </header>
-   
-<div class="update-profile">
+
+<div class="containers">
+    <div>
+        <h2>Choose your account type</h2>
+        
+    </div>
+    <section class="body">
+        <a href="./registerEngineering.html"><div class="card">
+        <div class="icon">
+            <!-- <i class="fa-solid fa-person-chalkboard"></i> -->
+            <i class="fa-solid fa-book-open-reader"></i>
+        </div>
+        <h4>Teacher</h4>
+        <p>Click to see register page</p>
+    </div></a> 
+   <a href="./register.html"><div class="card">
+        <div class="icon">
+            <i class="fas fa-user-alt"></i>
+        </div>
+        <h4>Student</h4>
+        <p>Click to see register page</p>
+    </div></a> 
+    <!-- <div class="card">
+        <div class="icon">
+            <i class="fas fa-user-alt"></i>
+        </div>
+        <h4>Teacher</h4>
+        <p>Click to see regiser page</p>
+    </div> -->
 
 
-   <form action="" method="post" enctype="multipart/form-data">
-      <div class="flex">
-         <div class="inputBox">
-            <span>first name :</span>
-            <input type="text" name="firstname" value="" class="box">
-            <span>last name :</span>
-            <input type="text" name="lastname" value="" class="box">
-            <span>your email :</span>
-            <input type="email" name="update_email" value="" class="box">
-            <span>upload your image :</span>
-            <input type="file" name="update_image" accept="image/jpg, image/jpeg, image/png" class="box">
-            
-         </div>
-         <div class="inputBox">
-            <input type="hidden" name="old_pass" value="">
-            <span>old password :</span>
-            <input type="password" name="update_pass" placeholder="enter previous password" class="box">
-            <span>new password :</span>
-            <input type="password" name="new_pass" placeholder="enter new password" class="box">
-            <span>confirm password :</span>
-            <input type="password" name="confirm_pass" placeholder="confirm new password" class="box">
-         </div>
-      </div>
-      <input type="submit" value="update profile" name="update_profile" class="btn">
-      <a href="./userprofile.html" class="delete-btn">go back</a>
-   </form>
+</section>
+<div class="login">
+    <p>Don't have an account?<a href="./login.html" > <span style="color: #FF0000;">Sign in</span> </a></p>
 
 </div>
+</div>
+  
+
+
 <!-- Scroll to top -->
 <span class="up"> <i class="fa-solid fa-up-long"></i></span>
 <!-- Scroll to top -->
@@ -132,8 +137,8 @@
                 <h4> Quick Links </h4>
                 <ul>
                     <li><a href="./login.html"> Login</a></li>
-                    <li><a href="./register.html"> Register</a></li>
-                    <li><a href="#"> Shop Now </a></li>
+                    <li><a href="./registerPage.html"> Register</a></li>
+                    <li><a href="./shop.html"> Shop Now </a></li>
                 </ul>
             </div>
 
@@ -141,7 +146,7 @@
                 <h4> Courses </h4>
                     <div class="time_footer">
                         <ul>
-                            <li><a href="#"> All Courses  </a></li>
+                            <li><a href="./shop.html"> All Courses  </a></li>
                             <li><a href="#"> Civil Engineering </a></li>
                             <li><a href="#"> Electrical Engineering </a></li>
                         </ul>
@@ -176,5 +181,7 @@
 </div>
 <script src="./JS/scroll.js"></script>
 <script src="./JS/jave.js"></script>
+</body>
+</html>
 </body>
 </html>
