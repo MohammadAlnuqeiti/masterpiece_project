@@ -176,15 +176,27 @@
                 <td>200.00 JD</td>
             </tr>
             <tr >
-                <td colspan="2"><a href="./checkout.html" class="submit-btn">Proceed to checkout</a></td>
+                <td colspan="2"><a href="./checkout.html" class="submit-btn" id="submit_btn" >Proceed to checkout</a></td>
             </tr>
-
+         
+            
         </table>
     </div>
 </form>
 
 
-</div>    
+</div> 
+<!-- 
+<div class="container-popup">
+    <button type="submit" class="btn-popup" onclick="openPopup()">Submit</button>
+    <div class="popup" id="popup">
+        <img src="./image/404-tick.png" alt="">
+        <h2>Thank You!</h2>
+        <p>Your details has been successfully.</p>
+        <button type="button"  onclick="closePopup()">OK</button>
+    </div>
+
+</div> -->
     
 <!-- Scroll to top -->
 <span class="up"> <i class="fa-solid fa-up-long"></i></span>
@@ -251,6 +263,17 @@
 <div class="footer-botoom">
     <p> Copyright &copy; 2023 <span>Nuqeiti For Training </span> . designed by <span> Mohammad Al-nuqeiti </span> </p>
 </div>
+<script>
+    let submit_btn=document.getElementById("submit_btn");
+    let popup = document.getElementById("popup");
+    // submit_btn.addEventListener('click' , openPopup);
+    function openPopup(){
+        popup.classList.add('open-popup');
+    }
+    function closePopup(){
+        popup.classList.remove('open-popup');
+    }
+</script>
 <script src="./JS/scroll.js"></script>
 <script src="./JS/jave.js"></script>
 </body>
